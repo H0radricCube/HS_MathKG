@@ -157,15 +157,6 @@ def edit_graph():
     return render_template('edit-graph.html', form_node=form1, form_edge=form2, 
                             graph_info=graph_info, authorized = authorized, graphname4js = graphname4js, slider_num = slider_num, title="Edit Graph")
 
-@app.route('/index', methods=['post','get'])  #这里指定了接收的username的类型,如果不符合会报错,
-def index():                     #可以将string改成path, 这样username就会被当成路径来接收,也就是说username可以是任意可键入路由的值了
-    slider_num = request.args.get('slider_num')
-    if slider_num == None:
-        slider_num = 5
-    return str(slider_num)
-
-
-
 
 @app.route('/3dlayout')
 def threeD():
@@ -323,7 +314,3 @@ def register():
             return redirect(url_for('login'))
     # GET 请求
     return render_template('register.html', form_newuser=form)
-
-@app.route('/slider')
-def slider_test():
-    return render_template('slider.html')

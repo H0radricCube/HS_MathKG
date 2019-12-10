@@ -12,6 +12,7 @@
 
 * Server-end
     * flask
+    * mongodb
 
 * Front-end
     * echarts
@@ -28,6 +29,11 @@
 * If you activated your virtual environment successfully, your will see "(venv)" in your command line
 * Dependencies in a virtual environment can be exported: $ pip freeze > requirements.txt
 * Dependencies can be installed into a virtual environment: $ pip install -r requirements.txt 
+
+## restore our data in your mongodb
+* the dump file is in app/static/data/dump
+* use the restore command: `mongorestore app/static/data/dump`
+
 
 ## How to run with dev server
 

@@ -41,7 +41,7 @@
 
 2. Install dependencies into your virtual environment
 
-3. You can run server by typing:"$ python math-server.py" and open the link "http://127.0.0.1:5000/" in your browser
+3. You can run server by typing:"$ python run_server.py" and open the link "http://127.0.0.1:5000/" in your browser
 
 4. Use "ctrl+c" to stop the server and use "$ deactivate" to quit virtual environment
 

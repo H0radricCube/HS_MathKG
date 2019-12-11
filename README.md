@@ -31,7 +31,7 @@
 * Dependencies can be installed into a virtual environment: $ pip install -r requirements.txt 
 
 ## restore our data in your mongodb
-* the dump file is in app/static/data/dump
+* the dump file is in `app/static/data/dump`
 * use the restore command: `mongorestore app/static/data/dump`
 
 
@@ -51,8 +51,8 @@
 
 2. Install dependencies into your virtual environment
 
-3. Run server in background: $ gunicorn math-server:app -p math-server.pid -b "your ip":"your port" -D
+3. Run server in background: `$ gunicorn run_server:app -p run_server.pid -b "your ip":"your port" -D`
 
-4. See the pid of your server: $ cat math-server.pid
+4. See the pid of your server: `$ cat run_server.pid`
 
-5. Shutdown your server: $ kill "pid of your server"
+5. Shutdown your server: `$ kill "pid of your server"`

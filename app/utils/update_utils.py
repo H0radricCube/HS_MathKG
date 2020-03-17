@@ -121,7 +121,7 @@ def update_edge(G, form2, user_name, operation, now_str):
     if operation == 'add' or operation == 'edit':
         G.add_edges_from([(new_edge.pop('source'),new_edge.pop('target'), edge_key, new_edge)])
     elif operation == 'delete':
-        G.remove_edge(new_edge['source'], new_edge['target'], key = new_edge['key'])
+        G.remove_edge(new_edge['source'], new_edge['target'], key = edge_key)
     if operation != 'edit':
         update_degree_size(G, form2.source_name.data, form2.target_name.data)
     return edge_key
